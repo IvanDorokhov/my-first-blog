@@ -1,0 +1,55 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+
+      <div id="table_1">
+      <table cellspacing="2" cellpadding="5"  >
+        <thead>
+          <tr>
+            <th></th>
+            <th>audd</th>
+          </tr>
+        </thead>
+        <tbody>
+        {% for key, value in shazam_audd.items %}
+         <tr>
+             <td> {{ key }} </td>
+             <td> {{ value }} </td>
+         </tr>
+         {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    <div id="table_2">
+      <table  cellspacing="2" cellpadding="5"  >
+        <thead>
+          <tr>
+            <th>genius</th>
+          </tr>
+        </thead>
+        <tbody>
+        {% for key, value in shazam_Genius.items %}
+         <tr>
+             <td> {{ value }} </td>
+         </tr>
+         {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    <div id="table_3">
+        <table cellspacing="2" cellpadding="5"  >
+          <thead>
+            <tr>
+              <th>discogs</th>
+            </tr>
+          </thead>
+          <tbody>
+          {% for key, value in shazam_discogs.items %}
+           <tr>
+               <td> {{ value }} </td>
+           </tr>
+           {% endfor %}
+          </tbody>
+        </table>
+      </div>
+{% endblock %}

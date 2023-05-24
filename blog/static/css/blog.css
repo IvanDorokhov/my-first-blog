@@ -44,3 +44,10 @@
 .post h1 a, .post h1 a:visited {
     color: #376d47;
 }
+
+table {
+    width: 33.3%;
+    float: left;
+    border:1px black;
+    }
+td { width:42px; height:42px; }
